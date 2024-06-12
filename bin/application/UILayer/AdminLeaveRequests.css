@@ -1,0 +1,42 @@
+
+
+/* General settings */
+.root {
+    -fx-font-size: 14px;
+    -fx-background-color: #003135;	
+}
+
+VBox,#bootm {
+	-fx-padding: 10px;
+	 -fx-background-color: lightblue;
+	 -fx-margin: 20px;
+}
+
+#heading {
+ 	-fx-font-size: 24px;
+ 	-fx-text-fill: #ffffff;
+ }
+ 
+ Label {
+ 
+ 	-fx-text-fill: #000000;
+ }
+/* TextArea settings */
+#approvalCommentTextArea {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-padding: 10px;
+    -fx-text-fill: #000000;
+}
+
+/* Button settings */
+Button,#button {
+   -fx-background-color: #003135;
+	 -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+Button:hover {
+    -fx-background-color: #0d5c63;
+}

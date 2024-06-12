@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="764.0" stylesheets="@form.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UILayer.ManagementController">
+    <left>
+        <ListView fx:id="emailListView" prefWidth="207.0" />
+    </left>
+    <center>
+        <VBox>
+            <Label fx:id="emailSubjectLabel" text="Complain" />
+            <Label fx:id="emailSenderLabel" text="Sender" />
+            <TextArea fx:id="emailContentTextArea" editable="false" wrapText="true" />
+         <AnchorPane fx:id="bootm" prefHeight="84.0" prefWidth="478.0">
+            <children>
+                 <Button layoutX="272.0" layoutY="10.0" onAction="#handleReplyButtonAction" text="Reply" />
+                 <Button layoutX="143.0" layoutY="10.0" onAction="#handleComposeButtonAction" text="Create" />
+            </children>
+         </AnchorPane>
+        </VBox>
+    </center>
+   <top>
+      <AnchorPane prefHeight="160.0" prefWidth="678.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="296.0" layoutY="48.0" text="Complaints Register">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font></Label>
+            <Label layoutX="38.0" layoutY="110.0" text="Complaints" />
+            <ImageView fitHeight="124.0" fitWidth="158.0" layoutX="180.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="51.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleBackButton">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="2.5em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

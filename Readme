@@ -1,0 +1,44 @@
+Hostel Booking and Management System
+Welcome to the Hostel Booking and Management System! This system is designed to facilitate hostel booking, management, and communication between residents and hostel owners.
+
+Features
+For Residents:
+Hostel Booking: Residents can book hostels based on various criteria such as facilities, laundry, transport, rooms, and price range.
+Hostel Comparison: Residents can compare hostels based on price, facilities, and number of rooms.
+Feedback: Residents can provide feedback about hostels including ratings and descriptions.
+Leave Requests: Residents can apply for leave requests if they want to leave the hostel permanently. Leave requests are accepted or rejected by the hostel owner.
+Complaints and Maintenance Requests: Residents can submit complaints about hostel issues or maintenance requests to the hostel owner.
+For Hostel Owners:
+Hostel Advertisement: Hostel owners can create hostel advertisements including uploading images.
+Manage Hostels: Hostel owners can edit hostel information and delete hostel advertisements.
+Manage Student Information: Hostel owners can manage student bookings and view feedback about the hostel.
+Room Allocation: Hostel owners can allocate rooms to their hostels, set room types (e.g., double, triple, single), and manage room visibility (available or not).
+Leave Requests Management: Hostel owners can view and manage leave requests from residents.
+Complaints Management: Hostel owners can reply to complaints from students.
+Technologies Used
+Backend: Java
+Frontend: JavaFX
+Database: MySQL
+IDE: Eclipse
+Libraries: JavaFX libraries, FontAwesome icon jar, ControlFx jar, MySQL Connector
+Prerequisites
+Before running the project, ensure you have the following installed:
+
+Eclipse IDE
+JavaFX libraries
+FontAwesome icon jar
+ControlFx jar
+MySQL Connector
+Running the Project
+Follow these steps to run the project:
+
+Clone Repository: Clone this repository to your local machine.
+Import Project: Open Eclipse IDE and import the project.
+Set Up Database: Set up a MySQL database using MySQL Workbench. Create tables as per the project requirements.
+Configure Database Connection: Update the database connection details in the project to connect to your MySQL database.
+Add Libraries: Add the JavaFX libraries, FontAwesome icon jar, ControlFx jar, and MySQL Connector to your project build path.
+Run Project: Run the project in Eclipse IDE.
+Contributors
+[Hassan Rehman]
+[Hafsa Waqar]
+[Shajia Tahir]

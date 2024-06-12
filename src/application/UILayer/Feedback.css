@@ -1,0 +1,44 @@
+#mainAnchorPane {
+    -fx-background-color: #003135;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+#transparentButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+#transparentButton .graphic {
+    -fx-background-color: transparent;
+}
+
+.text-area {
+    -fx-background-color: lightblue;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+#feedbackTextArea {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+Button {
+   -fx-background-color: lightblue;
+	 -fx-text-fill: black;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+Button:hover {
+    -fx-background-color: #0d5c63;
+}

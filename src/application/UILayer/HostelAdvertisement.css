@@ -1,0 +1,56 @@
+#mainAnchorPane {
+    -fx-background-color: #003135;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-padding: 0 0 0 25px;
+    -fx-background-color: LightBlue;
+    -fx-prompt-text-fill: black; 
+}
+
+.text-area {
+    -fx-padding: 0 0 0 25px; /* Add padding if needed */
+    -fx-background-color: LightBlue;
+    -fx-prompt-text-fill: black; 
+}
+
+.button {
+    -fx-background-color: LightBlue;
+    -fx-text-fill: black;
+}
+
+.Label {
+    -fx-text-fill: white;
+}
+
+/* Style for text fields when hovered */
+.text-field:focused {
+    -fx-prompt-text-fill: transparent; /* Make the prompt text transparent on hover or focus */
+}
+
+/* Style for text area when hovered */
+.text-area:focused {
+    -fx-prompt-text-fill: transparent; /* Make the prompt text transparent on hover or focus */
+}
+
+#facilitiesCheckBox .box {
+    -fx-background-color: LightBlue;
+}
+
+#facilitiesCheckBox .box:selected {
+    -fx-background-color: LightBlue; /* Change color when checkbox is selected */
+}
+
+#transparentButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+#transparentButton .graphic {
+    -fx-background-color: transparent;
+}

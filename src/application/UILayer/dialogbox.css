@@ -1,0 +1,52 @@
+.root {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 10;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.text-field, .text-area {
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+}
+/* Button settings */
+Button {
+   -fx-background-color: #003135;
+	 -fx-text-fill: white;
+  
+    -fx-background-radius: 5px;
+     -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5;
+}
+
+Button:hover {
+    -fx-background-color: #0d5c63;
+}
+
+VBox,#bootm {
+	-fx-padding: 10px;
+	 -fx-background-color: lightblue;
+	 -fx-margin: 20px;
+}
+
+
+.list-view {
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-padding: 5;
+    -fx-font-size: 14px;
+}
+
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 0);
+}
+
+.font-awesome-icon {
+    -fx-fill: #333;
+}

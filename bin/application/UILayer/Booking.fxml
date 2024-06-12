@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UILayer.ResidentController">
+   <children>
+      <AnchorPane fx:id="bookingPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="746.0" styleClass="scroll-pane" stylesheets="@ViewAd.css">
+         <children>
+            <ScrollPane fx:id="hostelScrollPane" layoutX="-1.0" layoutY="153.0" prefHeight="349.0" prefWidth="746.0">
+               <styleClass>
+                  <String fx:value="scroll-pane" />
+                  <String fx:value="white-bg" />
+                  <String fx:value="radius" />
+               </styleClass>
+               <content>
+                  <AnchorPane fx:id="hostelContentPane" prefHeight="504.0" prefWidth="747.0" styleClass="scroll-pane">
+                     <children>
+                        <AnchorPane fx:id="secondAnchorPane1" layoutX="26.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane4" layoutX="26.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane2" layoutX="283.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane3" layoutX="520.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane5" layoutX="274.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane6" layoutX="520.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Label layoutX="118.0" layoutY="14.0" text="Select Hostels">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/3619429.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="transparentButton" layoutX="20.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleBackButton">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="3em" />
+               </graphic>
+            </Button>
+            <Button fx:id="button" alignment="BOTTOM_LEFT" layoutX="499.0" layoutY="59.0" mnemonicParsing="false" onAction="#searchHostels" prefHeight="26.0" prefWidth="211.0" text="Search" />
+            <FontAwesomeIcon glyphName="SEARCH" layoutX="686.0" layoutY="78.0" size="1.5em" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="searchPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="746.0" styleClass="AnchorPane" stylesheets="@../../../../../Downloads/Project_HMS%20(2)/Project_HMS/Project_HMS/src/application/UILayer/Login.css" visible="false">
+         <children>
+            <Button fx:id="transparentButton" layoutX="28.0" layoutY="35.0" mnemonicParsing="false" onAction="#backToBookingPage" prefHeight="30.0" prefWidth="32.0" stylesheets="@Login.css">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="3em" />
+               </graphic>
+            </Button>
+            <Label layoutX="215.0" layoutY="35.0" text="Search For Hostel" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+               </font>
+            </Label>
+            <TextField fx:id="locationField" layoutX="227.0" layoutY="126.0" prefHeight="30.0" prefWidth="250.0" promptText="Location" stylesheets="@Login.css" />
+            <TextField fx:id="priceRangeField" layoutX="227.0" layoutY="184.0" prefHeight="30.0" prefWidth="250.0" promptText="Price Range" stylesheets="@Login.css" />
+            <CheckBox fx:id="airConditionerCheckBox" layoutX="227.0" layoutY="243.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" styleClass="combo-box" text="Air Conditior" />
+            <CheckBox fx:id="laundryCheckBox" layoutX="227.0" layoutY="302.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" styleClass="combo-box" text="Laundary" />
+            <CheckBox fx:id="transportCheckBox" layoutX="227.0" layoutY="352.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" styleClass="combo-box" text="Transport" />
+            <FontAwesomeIcon glyphName="LOCATION_ARROW" layoutX="234.0" layoutY="147.0" size="1.5em" />
+            <FontAwesomeIcon glyphName="MONEY" layoutX="231.0" layoutY="205.0" size="1.5em" />
+            <Button layoutX="302.0" layoutY="422.0" mnemonicParsing="false" onAction="#showResults" prefHeight="30.0" prefWidth="100.0" text="Submit" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="resultPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="746.0" styleClass="scroll-pane" stylesheets="@ViewAd.css" visible="false">
+         <children>
+            <ScrollPane fx:id="hostelScrollPane1" layoutX="-1.0" layoutY="153.0" prefHeight="349.0" prefWidth="746.0">
+               <styleClass>
+                  <String fx:value="scroll-pane" />
+                  <String fx:value="white-bg" />
+                  <String fx:value="radius" />
+               </styleClass>
+               <content>
+                  <AnchorPane fx:id="hostelContentPane1" prefHeight="504.0" prefWidth="747.0" styleClass="scroll-pane">
+                     <children>
+                        <AnchorPane fx:id="resultPane1" layoutX="26.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="resultPane4" layoutX="26.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="resultPane2" layoutX="283.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="resultPane3" layoutX="520.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="resultPane5" layoutX="274.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="resultPane6" layoutX="520.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Label layoutX="209.0" layoutY="25.0" text="Search Results">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/3619429.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="transparentButton" layoutX="28.0" layoutY="39.0" mnemonicParsing="false" onAction="#backToBookingPage">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="3em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="DetailsPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="746.0" styleClass="scroll-pane" stylesheets="@ViewAd.css" visible="false">
+         <children>
+            <Label layoutX="171.0" layoutY="14.0" text="Confirm Details">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/1810764.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="transparentButton" layoutX="20.0" layoutY="25.0" mnemonicParsing="false" onAction="#backToBookingPage">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="3em" />
+               </graphic>
+            </Button>
+            <TextField fx:id="nameField" layoutX="248.0" layoutY="167.0" prefHeight="30.0" prefWidth="250.0" promptText="Full Name" stylesheets="@Login.css" />
+            <TextField fx:id="ageField" layoutX="248.0" layoutY="219.0" prefHeight="30.0" prefWidth="250.0" promptText="Age" stylesheets="@Login.css" />
+            <TextField fx:id="emailField" layoutX="248.0" layoutY="266.0" prefHeight="30.0" prefWidth="250.0" promptText="Email" stylesheets="@Login.css" />
+            <TextField fx:id="contactNoField" layoutX="248.0" layoutY="317.0" prefHeight="30.0" prefWidth="250.0" promptText="Contact No." stylesheets="@Login.css" />
+            <ComboBox fx:id="roomTypeComboBox" layoutX="248.0" layoutY="368.0" prefHeight="30.0" prefWidth="250.0" promptText="Room Type" stylesheets="@Login.css" />
+            <Button layoutX="323.0" layoutY="426.0" mnemonicParsing="false" onAction="#bookRoom" prefHeight="30.0" prefWidth="100.0" stylesheets="@Login.css" text="Book" />
+            <FontAwesomeIcon glyphName="USER" layoutX="254.0" layoutY="188.0" size="1.5em" />
+            <FontAwesomeIcon glyphName="CALENDAR" layoutX="253.0" layoutY="240.0" size="1.5em" />
+            <FontAwesomeIcon glyphName="ENVELOPE" layoutX="253.0" layoutY="287.0" size="1.5em" />
+            <FontAwesomeIcon glyphName="PHONE" layoutX="254.0" layoutY="338.0" size="1.5em" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

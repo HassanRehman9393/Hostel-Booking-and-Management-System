@@ -1,0 +1,30 @@
+#secondAnchorPane {
+    -fx-background-color: lightblue;
+     -fx-background-radius: 15;  /* Change the color to your desired color */
+}
+
+#mainAnchorPane{
+	-fx-background-color: #003135;
+}
+
+.label{
+	-fx-text-fill:white;
+}
+
+#Label{
+	-fx-text-fill:black;
+}
+
+#transparentButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+#transparentButton .graphic {
+    -fx-background-color: transparent;
+}
+
+.mainAnchorPane{
+	-fx-background-color: #003135;
+}

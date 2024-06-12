@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UILayer.HostelController">
+   <children>
+      <AnchorPane fx:id="comparePage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="746.0" styleClass="scroll-pane" stylesheets="@Compare.css">
+         <children>
+            <ScrollPane fx:id="hostelScrollPane" layoutX="-1.0" layoutY="153.0" prefHeight="349.0" prefWidth="746.0">
+               <styleClass>
+                  <String fx:value="scroll-pane" />
+                  <String fx:value="white-bg" />
+                  <String fx:value="radius" />
+               </styleClass>
+               <content>
+                  <AnchorPane fx:id="hostelContentPane" prefHeight="504.0" prefWidth="747.0" styleClass="scroll-pane">
+                     <children>
+                        <AnchorPane fx:id="secondAnchorPane1" layoutX="26.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane4" layoutX="26.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane2" layoutX="274.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane3" layoutX="520.0" layoutY="21.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane5" layoutX="274.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                        <AnchorPane fx:id="secondAnchorPane6" layoutX="520.0" layoutY="330.0" prefHeight="288.0" prefWidth="200.0" style="-fx-background-color: lightblue; -fx-background-radius: 15;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Label fx:id="Label" layoutX="186.0" layoutY="18.0" text="Comapre Hostels">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/WhatsApp_Image_2024-05-24_at_4.13.12_PM-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="transparentButton" layoutX="32.0" layoutY="28.0" mnemonicParsing="false" onAction="#handleBackresident">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="3em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="resultPage" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="746.0" styleClass="scroll-pane" stylesheets="@Compare.css" visible="false">
+         <children>
+            <Label fx:id="Label" layoutX="186.0" layoutY="18.0" text="Comparision Result">
+               <font>
+                  <Font name="Berlin Sans FB" size="36.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/WhatsApp_Image_2024-05-24_at_4.13.12_PM-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Button fx:id="transparentButton" layoutX="41.0" layoutY="54.0" mnemonicParsing="false" onAction="#showComparePage">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="3em" />
+               </graphic>
+            </Button>
+            <AnchorPane fx:id="secondAnchorPane" layoutY="157.0" prefHeight="342.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="label" layoutX="70.0" text="Hostel 1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hostel1Name" layoutX="14.0" layoutY="153.0" text="Name">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="hostel1Image" fitHeight="116.0" fitWidth="214.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="hostel1Price" layoutX="14.0" layoutY="188.0" text="Price">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hostel1Facilities" layoutX="14.0" layoutY="214.0" text="Facilities">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hostel1Room" layoutX="14.0" layoutY="246.0" text="Rooms">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="button2" layoutX="9.0" layoutY="302.0" mnemonicParsing="false" text="Contact Owner">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="PHONE" size="1.5em" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="button2" layoutX="136.0" layoutY="302.0" mnemonicParsing="false" text="Book">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" size="1.5em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="secondAnchorPane" layoutX="531.0" layoutY="157.0" prefHeight="342.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="label" layoutX="71.0" layoutY="4.0" text="Result">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabel" layoutX="14.0" layoutY="108.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabe2" layoutX="14.0" layoutY="161.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultLabe3" layoutX="14.0" layoutY="210.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="secondAnchorPane" layoutX="266.0" layoutY="157.0" prefHeight="342.0" prefWidth="214.0">
+               <children>
+                  <Label fx:id="label" layoutX="70.0" text="Hostel 2">
+                     <font>
+                        <Font name="Berlin Sans FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hostel2Name" layoutX="14.0" layoutY="153.0" text="Name">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="hostel2Image" fitHeight="116.0" fitWidth="214.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="hostel2Price" layoutX="14.0" layoutY="188.0" text="Price">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hostel2Facilities" layoutX="14.0" layoutY="214.0" text="Facilities">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hostel2Room" layoutX="14.0" layoutY="246.0" text="Rooms">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="button2" layoutX="9.0" layoutY="302.0" mnemonicParsing="false" text="Contact Owner">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="PHONE" size="1.5em" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="button2" layoutX="136.0" layoutY="302.0" mnemonicParsing="false" text="Book">
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="CALENDAR" size="1.5em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

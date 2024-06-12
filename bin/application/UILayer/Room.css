@@ -1,0 +1,61 @@
+/* AnchorPane style */
+.anchor-pane {
+    -fx-background-color: #003135; /* Light blue background */
+}
+
+/* Label style */
+.label {
+    -fx-text-fill: white; /* Dark teal text color */
+}
+
+/* ComboBox style */
+.combo-box {
+    -fx-font-size: 14px; /* Font size */
+    -fx-background-color: #ffffff; /* White background */
+}
+
+/* TableView style */
+.table-view {
+    -fx-font-size: 14px; /* Font size */
+}
+
+/* TableColumn style */
+.table-column {
+    -fx-font-size: 14px;
+}
+
+/* TextField style */
+.text-field {
+    -fx-font-size: 14px; /* Font size */
+    -fx-background-color: #ffffff; /* White background */
+}
+
+/* Button style */
+.button {
+    -fx-font-size: 14px; /* Font size */
+    -fx-background-color: white; /* Dark teal background */
+    -fx-text-fill: #003135; /* White text color */
+}
+
+#transparentButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+#transparentButton .graphic {
+    -fx-background-color: transparent;
+}
+
+.table{
+ -fx-background-color: lightblue;
+}
+
+/* TableView header style */
+.table-view .column-header {
+    -fx-background-color: white; /* Header bar background color */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: black; /* Header text color */
+}

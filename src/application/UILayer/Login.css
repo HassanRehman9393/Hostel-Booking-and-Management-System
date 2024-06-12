@@ -1,0 +1,34 @@
+.text-field {
+	-fx-padding: 0 0 0 25px;
+	-fx-background-color: Lightblue;
+	
+	-fx-prompt-text-fill: black;
+}
+
+.AnchorPane {
+	-fx-background-color: #003135;
+}
+
+.Label {
+	-fx-textfill: white;
+}
+
+.combo-box,
+.button {
+	-fx-background-color: LightBlue;
+	-fx-textfill: white;
+}
+
+.text-field:focused {
+    -fx-prompt-text-fill: transparent; /* Make the prompt text transparent on hover or focus */
+}
+
+#transparentButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+#transparentButton .graphic {
+    -fx-background-color: transparent;
+}

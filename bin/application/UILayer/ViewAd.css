@@ -1,0 +1,57 @@
+#mainAnchorPane {
+    -fx-background-color: #003135;
+}
+
+#secondAnchorPane {
+    -fx-background-color: lightblue;
+    -fx-background-radius: 15;  /* Change the color to your desired color */
+}
+/* Set background color to white for the scroll pane */
+.scroll-pane {
+    -fx-background-color: #003135;
+}
+
+/* Set text color to black for labels */
+.label {
+    -fx-text-fill: white;
+}
+
+.white-bg{
+    -fx-background-color: #003135;
+}
+
+.radius{
+    -fx-background-radius: 8px;
+}
+
+#button{
+	 -fx-background-color: lightblue;
+	 
+}
+
+#button2{
+	 -fx-background-color: #003135;
+	 -fx-text-fill: white;
+}
+#label{
+	 -fx-text-fill: black;
+}
+
+#transparentButton {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+#transparentButton .graphic {
+    -fx-background-color: transparent;
+}
+
+.transparent-stackpane {
+    -fx-background-color: transparent;
+}
+
+/* Explicitly set all StackPane children to have transparent backgrounds */
+.transparent-stackpane .child {
+    -fx-background-color: transparent;
+}
